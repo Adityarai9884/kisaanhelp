@@ -5,7 +5,7 @@
 // Phase 2: hits the real Express backend
 // ─────────────────────────────────────────────
 
-const BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const BASE = process.env.REACT_APP_API_URL;
 
 // ── JWT helpers ───────────────────────────────
 export function getToken() {
