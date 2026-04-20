@@ -24,7 +24,6 @@ app.use(cors({
   credentials: true
 }));
 app.use(express.json());
-app.use("/api/auth", require("./routes/auth"));
 app.use(express.urlencoded({ extended: true }));
 
 if (process.env.NODE_ENV === 'development') {
