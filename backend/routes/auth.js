@@ -1,4 +1,5 @@
 // routes/auth.js — Register, Login, Me
+console.log("🔥 AUTH.JS LOADED");
 const express        = require('express');
 const jwt            = require('jsonwebtoken');
 const User           = require('../models/User');
@@ -13,6 +14,7 @@ function signToken(id) {
 
 // POST /api/auth/register
 router.post('/register', async (req, res) => {
+  console.log("✅ REGISTER ROUTE HIT");
   try {
     const { name, mobile, password, role, district } = req.body;
 
