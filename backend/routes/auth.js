@@ -15,6 +15,7 @@ function signToken(id) {
 // POST /api/auth/register
 router.post('/register', async (req, res) => {
   console.log("✅ REGISTER ROUTE HIT");
+   console.log("🚀 REGISTER API CALLED");
   try {
     const { name, mobile, password, role, district } = req.body;
 
