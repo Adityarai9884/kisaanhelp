@@ -5,7 +5,8 @@
 // Phase 2: hits the real Express backend
 // ─────────────────────────────────────────────
 
-const BASE = process.env.REACT_APP_API_URL;
+// const BASE = process.env.REACT_APP_API_URL;
+const BASE = "https://kisaanhelp.onrender.com/api";
 
 // ── JWT helpers ───────────────────────────────
 export function getToken() {
